@@ -9,17 +9,18 @@ Footer Slideup Form adds an AWeber Opt-In form into the footer where user can su
 
 == Description ==
 
-Footer Slideup Form is one of the best way to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://www.codeitwell.com/aweber-autoresponder-review.html" target="_blank">AWeber review</A> on my personal blog.
+Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://www.codeitwell.com/aweber-autoresponder-review.html" target="_blank">AWeber review</A> on my personal blog.
 
 == Installation ==
 
-Please Follow the exact Steps to Install this plugin.
+Please Follow the exact Steps to install and activate this plugin.
 
 e.g.
-1. Generate an Inline form using the AWeber Web form Interface.
-1. Grab the HTML code of your AWeber Form and Search for Hidden Div which lists all the hidden form fields. You will see it after the <FORM> tag.
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Edit Options under the Menu AWeber Footer SlideUp and the hidden div HTML Code into Text Box and Save the options.
+   1. Generate an Inline form using the AWeber Web form Interface.
+   2. Grab the HTML code of your AWeber Form and Search for Hidden Div which lists all the hidden form fields for subscription. You will see it just after the <FORM> tag.
+   3. Upload the plugin folder aweber-footer-slideup in the wp-contents/plugins folder.
+   4. Activate the plugin through the 'Plugins' menu in WordPress
+   5. Edit Options under the Menu AWeber Footer SlideUp and the hidden div HTML Code into Text Box and Save the options.
 
 == Frequently Asked Questions ==
 
@@ -29,7 +30,7 @@ Heading Tag Line (Optional) in the admin interface of the plugin. Leaving it bla
 
 = What is Tracking Image URL of AWeber Webform (Optional)? = 
 
-AWeber RAW HTML webform tracks the form view with an image and if you see just near the form end tag you will see <img src="SomeValue" border="0" />. Just copy the SomeValue from the HTML code and the image url in the Tracking Image URL of AWeber Webform.
+AWeber RAW HTML Webform tracks the form views and other stats with an image. If you would like to see how many users submit using the footer form you need to add the unique image url of AWeber into the field value. Just near the form end tag you will see <img src="SomeValue" border="0" />. Just copy the SomeValue from the HTML code and past it in Tracking Image URL of AWeber Webform. The Image URL will not be any normal jpg/gif like image.
 
 == Screenshots ==
 
