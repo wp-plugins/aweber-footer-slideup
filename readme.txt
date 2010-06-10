@@ -37,6 +37,9 @@ AWeber RAW HTML webform tracks the form view with an image and if you see just n
 
 == Changelog ==
 
+= 0.3 =
+* Do not Show the Form if Required Fields are not Filled.
+
 = 0.2 =
 * Basic Working Version of AWeber Footer Slideup with Admin Options Now Added.
 
@@ -46,5 +49,5 @@ AWeber RAW HTML webform tracks the form view with an image and if you see just n
 
 == Upgrade Notice ==
 
-= 0.2 =
+= 0.3 =
 This is the initial version and so there is nothing to upgrade.
