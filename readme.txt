@@ -31,6 +31,10 @@ Heading Tag Line (Optional) in the admin interface of the plugin. Leaving it bla
 
 AWeber RAW HTML Webform tracks the form views and other stats with an image. If you would like to see how many users submit using the footer form you need to add the unique image url of AWeber into the field value. Just near the form end tag you will see <img src="SomeValue" border="0" />. Just copy the SomeValue from the HTML code and past it in Tracking Image URL of AWeber Webform. The Image URL will not be any normal jpg/gif like image.
 
+= I have more Queries, Can you Help? =
+
+Yes I will be more than happy to help. Just post them in comments on my <A href="http://www.codeitwell.com/aweber-footer-slideup.html">blog</a>.
+
 == Screenshots ==
 
 1. How AWeber Footer Slideup Looks. 
