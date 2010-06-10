@@ -15,7 +15,6 @@ Footer Slideup Form is one of the best ways to ask your user to subscribe to you
 
 Please Follow the exact Steps to install and activate this plugin.
 
-e.g.
    1. Generate an Inline form using the AWeber Web form Interface.
    2. Grab the HTML code of your AWeber Form and Search for Hidden Div which lists all the hidden form fields for subscription. You will see it just after the <FORM> tag.
    3. Upload the plugin folder aweber-footer-slideup in the wp-contents/plugins folder.
