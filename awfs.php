@@ -28,6 +28,8 @@ $plugin_abs_url = WP_PLUGIN_URL.'/aweber-footer-slideup';
 }
 
 function awfs_form()  {
+$awfs_hiddenfields = get_option('awfs_hiddenfields');
+if($awfs_hiddenfields =='') return;
 ?>
 <div id="footerform">
 	<div class="close">
@@ -38,7 +40,7 @@ function awfs_form()  {
 	<div class="tagline"><?php $awfs_tagline=get_option('awfs_tagline'); echo $awfs_tagline==''?'Subscribe By Email for Weekly Updates.':$awfs_tagline; ?></div>
 
 	<form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
-		<?php echo get_option('awfs_hiddenfields'); ?>
+		<?php echo $awfs_hiddenfields ?>
 		<input type="text" name="name" class="formInputfooter formInputNamefooter" value="What is your first name?" size="20" />
 		<input type="text" name="from" class="formInputfooter formInputEmailfooter" value="What is your email?" size="20" />
 		<input type="submit" name="submit" class="formInputSubmitfooter" value="Subscribe Now !!!">
