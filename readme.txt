@@ -41,6 +41,9 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Changelog ==
 
+= 0.5 =
+* On some web servers filenames with ".cookie" in them is a problem and so now the file is renamed.
+
 = 0.4 =
 * Tracking Image Settings Bug Removed.
 
@@ -56,5 +59,5 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Upgrade Notice ==
 
-= 0.3 =
+= 0.5 =
 This is the initial version and so there is nothing to upgrade.
