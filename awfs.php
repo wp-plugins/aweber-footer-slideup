@@ -2,7 +2,7 @@
 /*
 	Plugin Name: AWeber Footer SlideUp
 	Plugin URI: http://wordpress.org/extend/plugins/aweber-footer-slideup/
-	Description: Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that.  It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">Aweber</A> (Aff Link) is one of the better  autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A  HREF="http://www.codeitwell.com/aweber-autoresponder-review.html" target="_blank">AWeber review</A> on my personal blog.
+	Description: Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://www.codeitwell.com/aweber-autoresponder-review.html" target="_blank">AWeber Review</A> on my blog.
 	Author: Shabbir Bhimani
 	Version: 0.3
 	Author URI: http://www.codeitwell.com/
@@ -60,16 +60,17 @@ function awfs_plugin_menu() {
 }
 
 function register_awfs_settings() {
-	//register our settings
+	//register settings
 	register_setting( 'awfs-settings-group', 'awfs_tagline' );
 	register_setting( 'awfs-settings-group', 'awfs_hiddenfields' );
+	register_setting( 'awfs-settings-group', 'awfs_formstatstracking' );
 }
 
 
 function awfs_plugin_options() {
 ?>
 <div class="wrap">
-<p>Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://www.codeitwell.com/aweber-autoresponder-review.html" target="_blank">AWeber review</A> on my personal blog.</p>
+<p>Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://www.codeitwell.com/aweber-autoresponder-review.html" target="_blank">AWeber Review</A> on my blog.</p>
 <p>If you are still not using AWeber for your blog and thinking of purchase you can use my affiliate <A HREF="http://g4ef.aweber.com/">link</A>.</p>
 <p>For all your queries, help and support for plugin please post them in comments <A HREF="http://www.codeitwell.com/aweber-footer-slideup/" target="_blank">at my blog</A>. I will be actively supporting the plugin.</p>
 
