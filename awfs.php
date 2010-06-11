@@ -21,7 +21,6 @@ $plugin_abs_url = WP_PLUGIN_URL.'/aweber-footer-slideup';
 ?>
 <link rel="stylesheet" href="<?php echo $plugin_abs_url; ?>/style.css" type="text/css" media="screen" />
 <script type="text/javascript" src="<?php echo $plugin_abs_url; ?>/js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="<?php echo $plugin_abs_url; ?>/js/jquery.include.js"></script>
 <script type="text/javascript" src="<?php echo $plugin_abs_url; ?>/js/jquery-cookie.js"></script>
 <script type="text/javascript" src="<?php echo $plugin_abs_url; ?>/js/jquery-libs.js"></script>
 <?php
