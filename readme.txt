@@ -41,6 +41,9 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Changelog ==
 
+= 0.7 =
+* Fix for z-index issues with some of the themes.
+
 = 0.6 =
 * Fix for the jQuery Variable Conflicts with other version of jQuery used on same page.
 
@@ -62,5 +65,5 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Upgrade Notice ==
 
-= 0.6 =
-This is the initial version and so there is nothing to upgrade.
+= 0.7 =
+Just Replace the content of the plugins folder with the new content and re-activate the plugin.
