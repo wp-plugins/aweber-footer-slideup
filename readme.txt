@@ -31,6 +31,10 @@ Heading Tag Line (Optional) in the admin interface of the plugin. Leaving it bla
 
 AWeber RAW HTML Webform tracks the form views and other stats with an image. If you would like to see how many users submit using the footer form you need to add the unique image url of AWeber into the field value. Just near the form end tag you will see <img src="SomeValue" border="0" />. Just copy the SomeValue from the HTML code and paste it in Tracking Image URL of AWeber Webform. The Image URL will not be any normal jpg/gif like image.
 
+= I installed the plugin with exact steps you mentioned and yet I cannot see the SlideUp. Why? = 
+
+If you have pasted the hidden div HTML Code generated in Step 2 of installation in the Options under the Menu 'AWeber Footer SlideUp' and if still you cannot see the SlideUp in footer the only reason could be that your theme does not support Hooks in header and Footer. Any Wordpress Theme should follow the <a href="http://codex.wordpress.org/Theme_Development">Wordpress Theme Development Guidelines</a> and should have the needed function calls in header and footer. Your theme should have wp_footer() call, to appear just before closing body tag and if it does not have it the plugin may not work as expected.
+
 = I have more Queries, Can you Help? =
 
 Yes I will be more than happy to help. Just post them in comments on my <A href="http://www.codeitwell.com/aweber-footer-slideup.html">blog</a>.
@@ -40,6 +44,9 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 1. How AWeber Footer Slideup Looks. 
 
 == Changelog ==
+
+= 0.7 =
+* Added Few more FAQ's.
 
 = 0.7 =
 * Fix for z-index issues with some of the themes.
@@ -59,11 +66,10 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 = 0.2 =
 * Basic Working Version of AWeber Footer Slideup with Admin Options Now Added.
 
-
 = 0.1 =
 * Basic Working Version of AWeber Footer Slideup
 
 == Upgrade Notice ==
 
-= 0.7 =
+= 0.8 =
 Just Replace the content of the plugins folder with the new content and re-activate the plugin.
