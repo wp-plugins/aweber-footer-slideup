@@ -2,7 +2,7 @@ var $awfsjQuery = jQuery.noConflict(); // Support for more than one version of j
 
 $awfsjQuery(document).ready(function() {
 	$awfsjQuery('input[value]').each(function(){
-		if(this.type == 'text' && (this.name=="subscriber_name" || this.name=="subscriber_email")) {
+		if(this.type == 'text' && (this.name=="name" || this.name=="email")) {
 			$awfsjQuery(this).focus(function(){ if (this.value == this.defaultValue) { this.value = ''; }});
 			$awfsjQuery(this).blur(function(){ if (!this.value.length) { this.value = this.defaultValue; }});
 		}
