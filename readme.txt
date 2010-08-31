@@ -45,6 +45,9 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Changelog ==
 
+= 0.9 =
+* Upgraded to Latest JQuery
+
 = 0.7 =
 * Added Few more FAQ's.
 
@@ -71,5 +74,5 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Upgrade Notice ==
 
-= 0.8 =
+= 0.9 =
 Just Replace the content of the plugins folder with the new content and re-activate the plugin.
