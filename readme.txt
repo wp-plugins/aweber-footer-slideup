@@ -9,7 +9,7 @@ Footer Slideup Form adds an AWeber Opt-In form into the footer where user's can 
 
 == Description ==
 
-Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://www.codeitwell.com/aweber-autoresponder-review.html" target="_blank">AWeber Review</A> on my blog.
+Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://imtips.co/aweber-autoresponder-review.html" target="_blank">AWeber Review</A> on my blog.
 
 == Installation ==
 
@@ -37,7 +37,7 @@ If you have pasted the hidden div HTML Code generated in Step 2 of installation 
 
 = I have more Queries, Can you Help? =
 
-Yes I will be more than happy to help. Just post them in comments on my <A href="http://www.codeitwell.com/aweber-footer-slideup.html">blog</a>.
+Yes I will be more than happy to help. Just post them in comments on my <A href="http://imtips.co/aweber-footer-slideup.html">blog</a>.
 
 == Screenshots ==
 
