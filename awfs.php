@@ -4,7 +4,7 @@
 	Plugin URI: http://wordpress.org/extend/plugins/aweber-footer-slideup/
 	Description: Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://imtips.co/aweber-autoresponder-review.html" target="_blank">AWeber Review</A> on my blog.
 	Author: Shabbir Bhimani
-	Version: 0.91
+	Version: 0.92
 	Author URI: http://imtips.co/
  */
 if ( ! defined( 'WP_CONTENT_URL' ) )
@@ -36,6 +36,8 @@ if($awfs_hiddenfields =='') return;
 	    <div id="dontshowanymore"><a href="#" onclick="slidedown(); return false;">Never show again.</a></div>
 	</div>
 
+<?php $awfs_tagimage= get_option('awfs_tagimage'); if(trim($awfs_tagimage)!='') echo "<img src='$awfs_tagimage' class='awfs_tagimage' border='0' />"; ?>
+
 	<div class="tagline"><?php $awfs_tagline=get_option('awfs_tagline'); echo $awfs_tagline==''?'Subscribe By Email for Weekly Updates.':$awfs_tagline; ?></div>
 
 	<form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
@@ -63,6 +65,7 @@ function register_awfs_settings() {
 	register_setting( 'awfs-settings-group', 'awfs_tagline' );
 	register_setting( 'awfs-settings-group', 'awfs_hiddenfields' );
 	register_setting( 'awfs-settings-group', 'awfs_formstatstracking' );
+	register_setting( 'awfs-settings-group', 'awfs_tagimage' );
 }
 
 
@@ -85,6 +88,10 @@ function awfs_plugin_options() {
 <td><input type="text" name="awfs_formstatstracking" value="<?php echo get_option('awfs_formstatstracking'); ?>" /></td>
 </tr>
 <tr valign="top">
+<th scope="row">Header Image URL (Optional)</th>
+<td><input type="text" name="awfs_tagimage" value="<?php echo get_option('awfs_tagimage'); ?>" /></td>
+</tr>
+<tr valign="top">
 <th scope="row">Hidden AWeber Form Fields (Required)
 <div style="font-weight:bold;color:red;padding-top:10px;">Generate an Inline form using the AWeber WebForm Interface. Grab the HTML code of your AWeber Form and Search for Hidden Div which lists all the hidden form fields. You will see it just after after the <FORM> tag.
 </div></th>
@@ -94,7 +101,7 @@ function awfs_plugin_options() {
 </tr>
 </table>
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="awfs_formstatstracking, awfs_tagline,awfs_hiddenfields" />
+<input type="hidden" name="page_options" value="awfs_formstatstracking,awfs_tagline,awfs_hiddenfields,awfs_tagimage" />
 <p class="submit">
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
 </p>

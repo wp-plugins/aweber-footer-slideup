@@ -45,6 +45,9 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Changelog ==
 
+= 0.92 =
+* Added Support for Image Tagline.
+
 = 0.91 =
 * Blank tracking image bug solved.
 

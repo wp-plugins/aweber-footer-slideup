@@ -10,6 +10,11 @@ div#footerform{
 	display:none;
 	z-index: 10;
  }
+div#footerform img {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+}
 div#footerform form {
 	display:inline;
 }
