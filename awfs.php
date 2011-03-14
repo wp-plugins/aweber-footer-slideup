@@ -74,7 +74,8 @@ function awfs_plugin_options() {
 <div class="wrap">
 <p>Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://imtips.co/aweber-autoresponder-review.html" target="_blank">AWeber Review</A> on my blog.</p>
 <p>If you are still not using AWeber for your blog and thinking of purchase you can use my affiliate <A HREF="http://g4ef.aweber.com/">link</A>.</p>
-<p>For all your queries, help and support for plugin please post them in comments <A HREF="http://imtips.co/aweber-footer-slideup/" target="_blank">at my blog</A>. I will be actively supporting the plugin.</p>
+<p>For all your queries, help and support for plugin please post them in comments <A HREF="http://imtips.co/aweber-footer-slideup.html" target="_blank">at my blog</A>. I will be actively supporting the plugin.</p>
+<p>Detail instructions on how to configure the plugin are <a target="_blank" href="http://imtips.co/aweber-footer-slideup-installation-instructions.html">here</a></p>
 
 <form method="post" action="options.php">
 <?php settings_fields( 'awfs-settings-group' ); ?>
@@ -93,7 +94,7 @@ function awfs_plugin_options() {
 </tr>
 <tr valign="top">
 <th scope="row">Hidden AWeber Form Fields (Required)
-<div style="font-weight:bold;color:red;padding-top:10px;">Generate an Inline form using the AWeber WebForm Interface. Grab the HTML code of your AWeber Form and Search for Hidden Div which lists all the hidden form fields. You will see it just after after the <FORM> tag.
+<div style="font-weight:bold;color:red;padding-top:10px;">Generate an Inline form using the AWeber WebForm Interface. Grab the HTML code of your AWeber Form and Search for Hidden Div which lists all the hidden form fields. You will see it just after after the &lt;FORM&gt; tag.
 </div></th>
 <td>
 <textarea name="awfs_hiddenfields" id="awfs_hiddenfields" rows="15" cols="90"  ><?php echo get_option('awfs_hiddenfields'); ?></textarea>

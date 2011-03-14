@@ -21,6 +21,8 @@ Please Follow the exact Steps to install and activate this plugin.
    4. Activate the plugin through the 'Plugins' menu in WordPress
    5. Edit Options under the Menu 'AWeber Footer SlideUp'. Paste the hidden div HTML Code generated in Step 2.
 
+Detail plugin configuration instructions are <a target="_blank" href="http://imtips.co/aweber-footer-slideup-installation-instructions.html">here</a>
+
 == Frequently Asked Questions ==
 
 = How to Edit the Tag Line Subscribe By Email for Weekly Updates? =
