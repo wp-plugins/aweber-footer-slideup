@@ -38,5 +38,5 @@ div#footerform .formInputSubmitfooter {
 	height:26px;
 	vertical-align:middle;
 }
-div#footerform .tagline { font-size: 14px; font-weight: bold; font-family: arial; }
+div#footerform .tagline { font-size: 14px; font-weight: bold; font-family: arial; color:black;}
 div#footerform .close { float:right; margin:4px 8px 0px 0px; }
