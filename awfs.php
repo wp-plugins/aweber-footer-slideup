@@ -36,7 +36,7 @@ if($awfs_hiddenfields =='') return;
 	    <div id="dontshowanymore"><a href="#" onclick="slidedown(); return false;">Never show again.</a></div>
 	</div>
 
-<?php $awfs_tagimage= get_option('awfs_tagimage'); if(trim($awfs_tagimage)!='') echo "<img src='$awfs_tagimage' class='awfs_tagimage' border='0' />"; ?>
+<?php $awfs_tagimage= get_option('awfs_tagimage'); if(trim($awfs_tagimage)!='') echo "<img src='$awfs_tagimage' class='awfs_tagimage' alt='' border='0' />"; ?>
 
 	<div class="tagline"><?php $awfs_tagline=get_option('awfs_tagline'); echo $awfs_tagline==''?'Subscribe By Email for Weekly Updates.':$awfs_tagline; ?></div>
 
@@ -46,7 +46,7 @@ if($awfs_hiddenfields =='') return;
 		<input type="text" name="from" class="formInputfooter formInputEmailfooter" value="What is your email?" size="20" />
 		<input type="submit" name="submit" class="formInputSubmitfooter" value="Subscribe Now !!!">
 	</form>
-<?php $awfs_formstatstracking= get_option('awfs_formstatstracking'); if(trim($awfs_formstatstracking)!='') echo "<img src='$awfs_formstatstracking' border='0' width='0' height='0' />"; ?>
+<?php $awfs_formstatstracking= get_option('awfs_formstatstracking'); if(trim($awfs_formstatstracking)!='') echo "<img src='$awfs_formstatstracking' border='0' width='0' height='0' alt='' />"; ?>
 </div>
 <?
 }
