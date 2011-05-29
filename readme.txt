@@ -2,7 +2,7 @@
 Contributors: shabbirbhimani
 Tags: AWeber, Footer Form, SLideUp
 Requires at least: 2.8
-Tested up to: 2.9.2
+Tested up to: 3.1.3
 Stable tag: trunk
 
 Footer Slideup Form adds an AWeber Opt-In form into the footer where user's can subscribe to your List.
