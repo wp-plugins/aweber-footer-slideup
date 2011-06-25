@@ -44,7 +44,7 @@ if($awfs_hiddenfields =='') return;
 		<?php echo $awfs_hiddenfields ?>
 		<input type="text" name="name" class="formInputfooter formInputNamefooter" value="What is your first name?" size="20" />
 		<input type="text" name="from" class="formInputfooter formInputEmailfooter" value="What is your email?" size="20" />
-		<input type="submit" name="submit" class="formInputSubmitfooter" value="" />
+		<input type="submit" name="submit" class="formInputSubmitfooter" value="Subscribe" />
 	</form>
 <?php $awfs_formstatstracking= get_option('awfs_formstatstracking'); if(trim($awfs_formstatstracking)!='') echo "<img src='$awfs_formstatstracking' border='0' width='0' height='0' alt='' />"; ?>
 </div>
