@@ -4,7 +4,7 @@
 	Plugin URI: http://wordpress.org/extend/plugins/aweber-footer-slideup/
 	Description: Footer Slideup Form is one of the best ways to ask users to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog.
 	Author: Shabbir Bhimani
-	Version: 1.00
+	Version: 1.01
 	Author URI: http://imtips.co/
  */
 if ( ! defined( 'WP_CONTENT_URL' ) )
@@ -56,7 +56,7 @@ if($awfs_hiddenfields =='') return;
 		<?php echo $awfs_hiddenfields ?>
 		<?php if(!get_option('awfs_no_name_field')): ?><input type="text" name="name" class="formInputfooter formInputNamefooter" value="<?php $awfs_def_name=get_option('awfs_def_name'); echo $awfs_def_name==''?'Your Name':$awfs_def_name; ?>" size="20" /> <?php endif ?>
 		<input type="text" name="from" class="formInputfooter formInputEmailfooter" value="<?php $awfs_def_email=get_option('awfs_def_email'); echo $awfs_def_email==''?'Your Best Email?':$awfs_def_email; ?>" size="20" />
-		<input type="submit" name="submit" class="formInputSubmitfooter" value="<?php $awfs_def_submit=get_option('awfs_def_submit'); echo $awfs_def_submit==''?'Subscribe':$awfs_def_submit; ?>" />
+		<input type="submit" name="submit" class="formInputSubmitfooter" value="<?php $awfs_def_submit=get_option('awfs_def_submit'); if($awfs_def_submit=='-')echo'';else if($awfs_def_submit=='')echo 'Subscribe' ; else echo $awfs_def_submit;?>" />
 	</form>
 	<?php $awfs_formstatstracking= get_option('awfs_formstatstracking'); if(trim($awfs_formstatstracking)!='') echo "<img src='$awfs_formstatstracking' border='0' width='0' height='0' alt='' />"; ?>
 </div>
@@ -141,7 +141,12 @@ function awfs_plugin_options() {
 <tr valign="top">
 <th scope="row">Don't Include Plugin CSS and I have added the CSS to my theme file.</th>
 <td><INPUT TYPE="checkbox" NAME="awfs_no_css" id="awfs_no_css" value="1" <?php if(get_option('awfs_no_css')) echo 'checked'; ?>>
-<div>Plugin CSS is stored in <A href="<?php echo PLUGIN_ABS_URL ?>/style.css"><?php echo PLUGIN_ABS_URL ?>/style.css</a> file and you can copy the content of the CSS file and paste into your theme's CSS file. If you are using frameworks like Thesis or Genesis you can add them to the custom CSS options they provide. It will reduce an extra file request to the CSS file on your server.</div>
+<div>Plugin CSS is stored in <A href="<?php echo PLUGIN_ABS_URL ?>/style.css"><?php echo PLUGIN_ABS_URL ?>/style.css</a> file and you can copy the content of the CSS file and paste into your theme's CSS file. Remember to copy the following 2 images as well.
+<ol>
+<li><img src="<?php echo PLUGIN_ABS_URL ?>/images/name.png" /> @ <a href="<?php echo PLUGIN_ABS_URL ?>/images/name.png"><?php echo PLUGIN_ABS_URL ?>/images/name.png</a></li>
+<li><img src="<?php echo PLUGIN_ABS_URL ?>/images/mail.png" /> @ <a href="<?php echo PLUGIN_ABS_URL ?>/images/mail.png"><?php echo PLUGIN_ABS_URL ?>/images/mail.png</a></li>
+</ol>
+If you are using frameworks like Thesis or Genesis you can add them to the custom CSS options they provide. It will reduce an extra file request to the CSS file on your server.</div>
 </td>
 </tr>
 <tr valign="top">
@@ -159,7 +164,7 @@ function awfs_plugin_options() {
 <tr valign="top">
 <th scope="row">Default Value in Submit Field (Optional)</th>
 <td><input type="text" name="awfs_def_submit" value="<?php echo get_option('awfs_def_submit'); ?>" />
-<div>Button Text. If you leave it as blank, the form will take the default value of "Subscribe".</div>
+<div>Button Text. If you leave it as blank, the form will take the default value of "Subscribe" If you want to use an image background enter minus (-) and it will not show any text as output.</div>
 </td>
 </tr>
 <tr valign="top">
