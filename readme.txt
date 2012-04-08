@@ -5,7 +5,7 @@ Requires at least: 2.8
 Tested up to: 3.3.1
 Stable tag: trunk
 
-Adds an Sliding Aweber Opt-In form in the footer and user's can subscribe to your List.
+Adds sliding Aweber Opt-In form in the footer and user's can subscribe to your list.
 
 == Description ==
 
