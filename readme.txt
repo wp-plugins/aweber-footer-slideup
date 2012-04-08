@@ -1,15 +1,15 @@
 === Plugin Name ===
 Contributors: shabbirbhimani
-Tags: AWeber, Footer Form, SLideUp
+Tags: AWeber, Footer Form, SlideUp
 Requires at least: 2.8
-Tested up to: 3.1.3
+Tested up to: 3.3.1
 Stable tag: trunk
 
-Footer Slideup Form adds an AWeber Opt-In form into the footer where user's can subscribe to your List.
+Adds an Sliding Aweber Opt-In form in the footer and user's can subscribe to your List.
 
 == Description ==
 
-Footer Slideup Form is one of the best ways to ask your user to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. <A HREF="http://g4ef.aweber.com">AWeber</A> (Aff Link) is one of the better autoresponders in the market and it allows you to send series of email message to subscribers. You can read my detailed <A HREF="http://imtips.co/aweber-autoresponder-review.html" target="_blank">AWeber Review</A> on my blog.
+Footer Slideup Form is one of the best ways to ask users to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog. If you aren't sure what is AWeber, you can read detailed <A HREF="http://imtips.co/aweber-autoresponder-review.html" target="_blank">AWeber Autoresponder Review</A> on my blog.
 
 == Installation ==
 
@@ -46,6 +46,13 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 1. How AWeber Footer Slideup Looks. 
 
 == Changelog ==
+
+= 1.00 =
+* Default Text of all form fields like Name, Email and submit button.
+* Option to add CSS from the Plugin CSS file or copy the same into theme CSS File and exlude the plugin CSS file.
+* Option to Remove - Close for Now and Never Show Again links
+* The optional name field.
+* Use of Wordpress support for jQuery as well as make it optional so user can use the jQuery emebeded by theme or other plugins.
 
 = 0.92 =
 * Added Support for Image Tagline.
