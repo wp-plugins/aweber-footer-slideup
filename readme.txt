@@ -2,7 +2,7 @@
 Contributors: shabbirbhimani
 Tags: AWeber, Footer Form, SlideUp
 Requires at least: 2.8
-Tested up to: 3.3.1
+Tested up to: 3.3.2
 Stable tag: trunk
 
 Adds sliding Aweber Opt-In form in the footer and user's can subscribe to your list.
