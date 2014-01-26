@@ -4,8 +4,8 @@
 	Plugin URI: http://wordpress.org/extend/plugins/aweber-footer-slideup/
 	Description: Footer Slideup Form is one of the best ways to ask users to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog.
 	Author: Shabbir Bhimani
-	Version: 1.07
-	Author URI: http://imtips.co/
+	Version: 1.08
+	Author URI: http://imtips.co/aweber-footer-slideup-installation-instructions.html
  */
 if ( ! defined( 'WP_CONTENT_URL' ) )
     define( 'WP_CONTENT_URL', get_option( 'siteurl' ) . '/wp-content' );
