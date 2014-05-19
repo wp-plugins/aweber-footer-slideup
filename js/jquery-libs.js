@@ -8,18 +8,16 @@ $awfsjQuery(document).ready(function() {
         }
     });
 });
-
 $awfsjQuery(function() {
     if($awfsjQuery.cookie('dont_show_footer_form') == null && $awfsjQuery(document).width() > 800){
         $awfsjQuery('#footerform').slideDown("slow");
   }
 });
-
-
 function slidedown() {
     $awfsjQuery(function() {
-        $awfsjQuery("#dontshowanymore").click(function() { $awfsjQuery.cookie('dont_show_footer_form', 'true', { expires: 3650, path: '/'}); });
-	    $awfsjQuery("#closefornow").click(function() { $awfsjQuery.cookie('dont_show_footer_form', 'true'); });
+        $awfsjQuery("#dontshowanymore").click(savePermCookie);
+	$awfsjQuery("#closefornow").click(function() { $awfsjQuery.cookie('dont_show_footer_form', 'true'); });
         $awfsjQuery('#footerform').slideUp("slow");
     });
 }
+function savePermCookie() { $awfsjQuery.cookie('dont_show_footer_form', 'true', { expires: 3650, path: '/'});  }

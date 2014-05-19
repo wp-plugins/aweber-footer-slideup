@@ -2,7 +2,7 @@
 Contributors: shabbirbhimani
 Tags: AWeber, Footer Form, SlideUp
 Requires at least: 2.8
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: trunk
 
 Adds sliding Aweber Opt-In form in the footer and user's can subscribe to your list.
@@ -46,6 +46,9 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 1. How AWeber Footer Slideup Looks. 
 
 == Changelog ==
+
+1.09
+* Hides Slideup After Form Submits - No Footer form will be displayed to user once the footer form is submitted. It behaves as if user has clicked on Never show again.
 
 1.08
 * Responsive - The Slideup does not display if the user browser window is less than 800 px wide

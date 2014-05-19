@@ -4,7 +4,7 @@
 	Plugin URI: http://wordpress.org/extend/plugins/aweber-footer-slideup/
 	Description: Footer Slideup Form is one of the best ways to ask users to subscribe to your list without any interruption or blocking and this plugin does exactly that. It adds an AWeber subscribe form in the footer of your Wordpress blog.
 	Author: Shabbir Bhimani
-	Version: 1.08
+	Version: 1.09
 	Author URI: http://imtips.co/aweber-footer-slideup-installation-instructions.html
  */
 if ( ! defined( 'WP_CONTENT_URL' ) )
@@ -52,7 +52,7 @@ if($awfs_hiddenfields =='') return;
 	</div>
 	<?php $awfs_tagimage= get_option('awfs_tagimage'); if(trim($awfs_tagimage)!='') echo "<img src='$awfs_tagimage' class='awfs_tagimage' alt='' border='0' />"; ?>
 	<div class="tagline"><?php $awfs_tagline=get_option('awfs_tagline'); echo $awfs_tagline==''?'Subscribe By Email for Updates.':$awfs_tagline; ?></div>
-	<form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
+	<form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new" onsubmit="slidedown();savePermCookie();">
 		<?php echo $awfs_hiddenfields ?>
 		<?php if(!get_option('awfs_no_name_field')): ?><input type="text" name="name" class="formInputfooter formInputNamefooter" value="<?php $awfs_def_name=get_option('awfs_def_name'); echo $awfs_def_name==''?'Your Name':$awfs_def_name; ?>" size="20" /> <?php endif ?>
 		<input type="text" name="from" class="formInputfooter formInputEmailfooter" value="<?php $awfs_def_email=get_option('awfs_def_email'); echo $awfs_def_email==''?'Your Best Email?':$awfs_def_email; ?>" size="20" />
