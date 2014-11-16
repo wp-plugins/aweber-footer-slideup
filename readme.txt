@@ -43,7 +43,7 @@ Yes I will be more than happy to help. Just post them in comments on my <A href=
 
 == Screenshots ==
 
-1. How AWeber Footer Slideup Looks. 
+1. How AWeber Footer Slideup Works
 
 == Changelog ==
 
